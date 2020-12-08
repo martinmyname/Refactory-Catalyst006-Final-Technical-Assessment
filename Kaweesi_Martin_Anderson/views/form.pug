@@ -13,15 +13,15 @@ html(lang="en")
             form.needs-validation(method='POST' action="/" novalidate)
                 .form-row
                     .form-group.col-md-6
-                        label(for='surname') Sur name
+                        label.required(for='surname') Sur name
                         input#surname.form-control(type='text' name="surname" placeholder="Enter your Sur Name here" required="")
                         .invalid-feedback This field is required
                     .form-group.col-md-6
-                        label(for='gname') Given name
+                        label.required(for='gname') Given name
                         input#gname.form-control(type='text' name="gname" placeholder="Enter your Given Name here"  required="")
                         .invalid-feedback This field is required
                 .form-row
-                    label(for='gender') Gender
+                    label.required(for='gender') Gender
                     label.form-check.form-check-inline
                         input.form-check-input(type="radio" name="gender" value="male" checked)
                         span.form-check-label Male 
@@ -30,11 +30,11 @@ html(lang="en")
                         span.form-check-label Female 
                 .form-row
                     .form-group.col-md-6
-                        label(for='DOB') Date of Birth
+                        label.required(for='DOB') Date of Birth
                         input#DOB.form-control(type='text' placeholder='01/01/1970' name="DOB" required="")
                         .invalid-feedback Date of birth required
                     .form-group.col-md-6
-                        label(for='country') Country
+                        label.required(for='country') Country
                         select.form-control(name='country' required="")
                             option(disabled selected) -----Select Country----
                             option Uganda
@@ -42,24 +42,24 @@ html(lang="en")
                             option Kenya
                 .form-row
                     .form-group.col-md-6
-                        label(for='residence') Place of Residence
+                        label.required(for='residence') Place of Residence
                         input#residence.form-control(type='text' name="residence" placeholder="Enter your Currnt place of residence" required="")
                         .invalid-feedback This field is required
                     .form-group.col-md-6
-                        label(for='phone') Phone Number
+                        label.required(for='phone') Phone Number
                         input#phone.form-control(type='text' name="phone" placeholder="Eg 07xxxxxxxx or +2567xxxxxxxxx" required="")
                         .invalid-feedback This field is required
                 .form-row
-                    label(for='email') Email Address
+                    label.required(for='email') Email Address
                     input#email.form-control(type='email' name="email" placeholder="Eg. applicant@gmail.com" required="")
                     .invalid-feedback This field is required
                 .form-row
                     .form-group.col-md-6
-                        label(for='skills') Skills
+                        label.required(for='skills') Skills
                         textarea#skills.form-control(type='text' name="skills" placeholder="(Separate skills with commas)" required="")
                         .invalid-feedback This field is required
                     .form-group.col-md-6
-                        label(for='gname') Given name
+                        label.required(for='gname') Given name
                         textarea#projects.form-control(type='text' name="projects" placeholder="(Separate Projects with commas)"  required="")
                         .invalid-feedback This field is required
                 button.btn.btn-lg.float-right(type="#") Cancel
