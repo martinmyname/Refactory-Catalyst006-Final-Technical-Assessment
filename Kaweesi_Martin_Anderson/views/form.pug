@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
+        link(rel='stylesheet' href='/css/style.css')
+        script(src="/js/validation.js")
+    body
+        .jumbotron
+            h1 Student Details Entry Form
+            h6 Not all fields marked with a red star are (*) are required
+            form.needs-validation(method='POST' action="/" novalidate)
+                .form-row
+                    .form-group.col-md-6
+                        label(for='surname') Sur name
+                        input#surname.form-control(type='text' name="surname" placeholder="Enter your Sur Name here" required="")
+                        .invalid-feedback This field is required
+                    .form-group.col-md-6
+                        label(for='gname') Given name
+                        input#gname.form-control(type='text' name="gname" placeholder="Enter your Given Name here"  required="")
+                        .invalid-feedback This field is required
+                .form-row
+                    label(for='gender') Gender
+                    label.form-check.form-check-inline
+                        input.form-check-input(type="radio" name="gender" value="male" checked)
+                        span.form-check-label Male 
+                    label.form-check.form-check-inline
+                        input.form-check-input(type="radio" name="gender" value="female")
+                        span.form-check-label Female 
+                .form-row
+                    .form-group.col-md-6
+                        label(for='DOB') Date of Birth
+                        input#DOB.form-control(type='text' placeholder='01/01/1970' name="DOB" required="")
+                        .invalid-feedback Date of birth required
+                    .form-group.col-md-6
+                        label(for='country') Country
+                        select.form-control(name='country' required="")
+                            option(disabled selected) -----Select Country----
+                            option Uganda
+                            option Tanzania
+                            option Kenya
+                .form-row
+                    .form-group.col-md-6
+                        label(for='residence') Place of Residence
+                        input#residence.form-control(type='text' name="residence" placeholder="Enter your Currnt place of residence" required="")
+                        .invalid-feedback This field is required
+                    .form-group.col-md-6
+                        label(for='phone') Phone Number
+                        input#phone.form-control(type='text' name="phone" placeholder="Eg 07xxxxxxxx or +2567xxxxxxxxx" required="")
+                        .invalid-feedback This field is required
+                .form-row
+                    label(for='email') Email Address
+                    input#email.form-control(type='email' name="email" placeholder="Eg. applicant@gmail.com" required="")
+                    .invalid-feedback This field is required
+                .form-row
+                    .form-group.col-md-6
+                        label(for='skills') Skills
+                        textarea#skills.form-control(type='text' name="skills" placeholder="(Separate skills with commas)" required="")
+                        .invalid-feedback This field is required
+                    .form-group.col-md-6
+                        label(for='gname') Given name
+                        textarea#projects.form-control(type='text' name="projects" placeholder="(Separate Projects with commas)"  required="")
+                        .invalid-feedback This field is required
+                button.btn.btn-lg.float-right(type="#") Cancel
+                button.btn.btn-lg.float-right(type="submit") Submit
+                
+
+        script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous')
+

@@ -1,0 +1,10 @@
+.jumbotron{
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    color: rgb(146, 35, 141);
+  }
+  h1{
+    color: white ;
+    background-color: rgb(146, 35, 141);
+  }
